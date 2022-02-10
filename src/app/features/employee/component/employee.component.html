@@ -1,0 +1,20 @@
+<ng-container *ngIf="{ employeeList: employeeList$ | async } as _">
+  <div class="employee-list">
+    <div *ngFor="let employee of _.employeeList">
+      <!-- Cards with media area -->
+      <mat-card routerLink="/home" class="employee-card">
+        <mat-card-title-group>
+          <mat-card-title>{{ employee.name }}</mat-card-title>
+          <mat-card-subtitle>{{ employee.jobTitle }}</mat-card-subtitle>
+          <img mat-card-sm-image src="{{ employee.imageUrl }}" />
+        </mat-card-title-group>
+        <mat-card-content>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+          doloribus, molestiae tempore consectetur ex in iste magnam totam
+          officiis culpa fuga. Exercitationem ullam reprehenderit cum molestiae
+          sed! Repellat, eligendi consequatur?
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</ng-container>

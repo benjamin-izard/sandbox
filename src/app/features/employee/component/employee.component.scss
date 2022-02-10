@@ -1,0 +1,14 @@
+.employee-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+  grid-gap: 40px;
+}
+
+.employee-card {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.employee-card:hover {
+  transform: scale(1.05);
+}

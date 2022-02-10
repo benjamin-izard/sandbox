@@ -1,0 +1,13 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.header-title {
+  font-size: large;
+}
+
+.header-toolbar {
+  position: fixed;
+  box-shadow: 0px 0.5px 10px rgba(0, 0, 0, 0.479);
+  z-index: 10;
+}

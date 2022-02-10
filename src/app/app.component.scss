@@ -1,0 +1,26 @@
+.app-container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: auto 1fr auto;
+}
+
+.app-header {
+  grid-column: span 3;
+  padding-bottom: 100px;
+}
+
+.app-content {
+  grid-column: 2;
+  grid-row: span 2;
+  height: max-content;
+}
+
+.app-footer {
+  height: 100px;
+  border-top: dotted 1px rgb(43, 43, 43);
+  grid-column: 2;
+  grid-row: 4;
+  margin-top: 40px;
+}
